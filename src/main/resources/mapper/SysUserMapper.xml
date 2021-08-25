@@ -5,10 +5,11 @@
         <result column="id" jdbcType="INTEGER" property="id"/>
         <result column="user_name" jdbcType="VARCHAR" property="userName"/>
         <result column="pass_word" jdbcType="VARCHAR" property="passWord"/>
+        <result column="pw" jdbcType="VARCHAR" property="pw"/>
     </resultMap>
 
     <sql id="Base_Column_List">
-        id, user_name, pass_word
+        id, user_name, pass_word, pw
     </sql>
 
 <!--    <select id="selectRoleById" resultMap="BaseResultMap">

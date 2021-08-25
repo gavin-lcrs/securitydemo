@@ -23,14 +23,13 @@ spring:
 mybatis-plus:
   # 如果是放在src/main/java目录下 classpath:/com/yourpackage/*/mapper/*Mapper.xml
   # 如果是放在resource目录 classpath:/mapper/*Mapper.xml
-  mapper-locations: classpath:mapper/*.xml, classpath:mybatis/mapping/**/*.xml
+  mapper-locations: classpath:mapper/*.xml
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: com.gavin.securitydemo.**
+  type-aliases-package: com.gavin.securitydemo.model.entity
   configuration:
-    map-underscore-to-camel-case: false
     cache-enabled: false
 
 # 在application.yml 中增加配置，指定 mapper 文件所在的包，进入DEBUG模式
 logging:
   level:
-    com.gavin.secu.mapper: trace
+    com.gavin.securitydemo.mapper: trace

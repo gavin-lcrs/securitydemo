@@ -1,6 +1,6 @@
 package com.gavin.securitydemo.mapper;
 
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.gavin.securitydemo.model.entity.SysRole;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;

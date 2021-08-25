@@ -1,7 +1,7 @@
 package com.gavin.securitydemo.model.entity;
 
-import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.annotations.TableName;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -23,4 +23,7 @@ public class SysUser {
 
     @Column(name = "pass_word")
     private String passWord;
+
+    @Column(name = "pw")
+    private String pw;
 }
